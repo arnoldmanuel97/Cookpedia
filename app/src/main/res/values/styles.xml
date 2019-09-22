@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/toolBarColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionBarStyle">@style/myToolBarStyle</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="myToolBarStyle" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="backgroundColor">@color/toolBarColor</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="colorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="Widget.App.Button.Icon" parent="@style/Widget.MaterialComponents.Button.Icon">
+        <item name="color">@color/colorPrimary</item>
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorOnSurface">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="iconPadding">0dp</item>
+        <item name="paddingEnd">6dp</item>
+        <item name="paddingStart">6dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minWidth">10dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="borderWidth">0dp</item>
+        <item name="android:colorFocusedHighlight">@android:color/background_dark</item>
+    </style>
+
+</resources>

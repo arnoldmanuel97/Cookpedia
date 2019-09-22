@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_mis_recetas"
+        android:enabled="true"
+        android:icon="@drawable/ic_recipes"
+        android:title="@string/icon_text_recipes"/>
+    <item
+        android:id="@+id/navigation_crear"
+        android:enabled="true"
+        android:icon="@drawable/ic_add"
+        android:title="@string/icon_text_add"/>
+</menu>

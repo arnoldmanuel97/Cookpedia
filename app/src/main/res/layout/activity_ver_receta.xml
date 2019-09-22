@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".VerRecetaActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/toolBarColor"
+            app:statusBarScrim="@color/toolBarColor"
+            style="@style/myToolBarStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:toolbarId="@+id/toolbar">
+            <ImageView
+                android:id="@+id/imagen_receta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:srcCompat="@drawable/ic_cutlery"
+                android:fitsSystemWindows="true"
+                android:background="@color/colorSecondary"/>
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:elevation="0dp" >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="10sp"
+                        android:layout_marginEnd="10sp"
+                        android:layout_gravity="end">
+                        <Button
+                            android:id="@+id/editar_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Editar"
+                            android:textAllCaps="false"
+                            app:icon="@drawable/ic_edit"
+                            app:iconTint="@color/colorWhite"
+                            style="@style/Widget.App.Button.Icon"
+                            app:iconGravity="textStart"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginEnd="6dp" />
+                        <Button
+                            android:id="@+id/borrar_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:icon="@drawable/ic_delete_outline"
+                            app:iconTint="@color/colorWhite"
+                            android:textAllCaps="false"
+                            style="@style/Widget.App.Button.Icon"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            app:iconGravity="textStart" />
+                    </LinearLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_scrolling" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
